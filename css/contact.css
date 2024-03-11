@@ -1,0 +1,255 @@
+.cbp-mc-form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+
+.cbp-mc-form:after { 
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 33%;
+	padding: 10px 30px;
+	float: left;
+}
+
+.cbp-mc-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	color:#333333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+margin-top:2px;margin-bottom:2px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	background:#FFFFFF;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: 3px solid #10689a;
+	color:#333333;
+}
+.filebox {
+	border: 2px solid #10689a;
+	color:#333333; margin-bottom:4px;
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid #000;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	background: #10689a;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.cbp-mc-form input.cbp-mc-reset{
+	background: #599397;
+	border: none;
+	color: #fff;
+	width: 84px; height:35px;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size:22px;
+	border-radius: 2px;border:2px solid #000;
+}
+
+.cbp-mc-form input.cbp-mc-space{
+	background: #CA4719;
+	border: none;
+	color: #fff;
+	width: 220px; height:35px;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size:22px;
+	border-radius: 2px; border:2px solid #000;
+}
+
+.cbp-mc-form input.cbp-mc-delete{
+	background: #718659;
+	border: none;
+	color: #fff;
+	width: 120px; height:35px;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size:22px;
+	border-radius: 2px;border:2px solid #000;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background: #1478b1;
+}
+.cbp-mc-form input.cbp-mc-reset:hover {
+	background: #406A6D;
+}
+.cbp-mc-form input.cbp-mc-space:hover {
+	background: #A4351F;
+}
+.cbp-mc-form input.cbp-mc-delete:hover {
+	background: #4E5D3D;
+}
+
+@media screen and (max-width: 70em) {
+	.cbp-mc-column {
+		width: 50%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 10px;
+	}
+
+}
+
+.up
+{margin-top:-22px;}
+.imgcent {text-align:center}
+
+@media screen and (min-width: 850px) {
+.cbp-mc-form textarea {
+	max-width: 650px;min-width: 650px;
+	max-height: 250px;max-height: 250px;
+	font-size: 2.2em;
+}
+	.cbp-mc-form input.cbp-mc-submit {
+	width: 40px; height:40px;font-size:26px;
+	}
+		.cbp-mc-form input.cbp-mc-kaar{
+	width: 40px; height:40px;font-size:26px;
+	}
+		.cbp-mc-form input.cbp-mc-swar{
+	width: 40px; height:40px;font-size:26px;
+	}
+		.cbp-mc-form input.cbp-mc-number{
+	width: 40px; height:40px;font-size:26px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+.cbp-mc-form textarea {
+	min-width: 280px;min-width: 280px;
+	min-height: 80px;max-height: 80px;
+	font-size: 1.5em;
+}
+	.cbp-mc-form input.cbp-mc-submit {
+	width: 25px; height:30px;font-size:18px;
+	}
+		.cbp-mc-form input.cbp-mc-swar{
+	width: 25px; height:30px;font-size:18px;
+	}
+		.cbp-mc-form input.cbp-mc-kaar{
+	width: 25px; height:30px;font-size:18px;
+	}
+		.cbp-mc-form input.cbp-mc-number{
+	width: 25px; height:30px;font-size:18px;
+	}
+}
+
+.cbp-mc-form input.cbp-mc-number {
+	background: #1B9F3B;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.cbp-mc-form input.cbp-mc-number:hover {
+	background: #4F815B;
+}
+
+.cbp-mc-form input.cbp-mc-kaar{
+	background: #484645;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.cbp-mc-form input.cbp-mc-kaar:hover {
+	background: #646464;
+}
+
+.cbp-mc-form input.cbp-mc-swar{
+	background: #C16A1D;
+	border: none;
+	color: #fff;
+
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+
+	border-radius: 2px;
+}
+
+.cbp-mc-form input.cbp-mc-swar:hover {
+	background: #A05615;
+}
+

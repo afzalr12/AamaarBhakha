@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aamaar Bhakha (আমাৰ ভাখা)  - Assamese Typing made easy...</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+	<link href="css/contact.css" rel="stylesheet">
+	<script src="js/typewriter.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/shortcut.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/filesaver.js" type="text/javascript" charset="UTF-8"></script>
+
+</head>
+
+<body onload="initializeAssm()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <span class="logo">AAMAAR BHAKHA (আমাৰ ভাখা) &nbsp; &nbsp; &nbsp; An Assamese Text Typing Application.</span>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+					<div class="page-content">
+						<div class="ace-settings-container" id="ace-settings-container">
+							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+								<img src="cd-top-arrow.svg">
+							</div>
+
+							<div class="ace-settings-box clearfix" id="ace-settings-box">
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+<label class="lbl" for="ace-settings-sidebar">SAVE FILE:</label><br>
+<input id="inputFileNameToSaveAs" class="filebox">&nbsp;<input class="btn btn-danger" name="c0985" value="SAVE" onclick='saveTextAsFile()' type="button">
+									</div>
+									<div class="ace-settings-item">
+<label class="lbl" for="ace-settings-sidebar">LOAD FILE:</label><br>
+<input type="file" id="fileToLoad" class="filebox"><input class="btn btn-info" name="c0985" value="LOAD" onclick='loadFileAsText()' type="button"><br></div>
+<br><br>
+									</div>
+
+
+
+								</div><!-- /.pull-left -->
+
+								<div class="pull-left width-50">
+									<div class="ace-settings-item"><br>
+									</div>
+								</div><!-- /.pull-left -->
+							</div><!-- /.ace-settings-box -->
+						</div>
+						<!-- /.ace-settings-container -->
+    <!-- Page Content -->
+    <div class="container">
+<form name="mainform" form class="cbp-mc-form">
+<textarea id="inputField" title="TYPE YOUR TEXT HERE..." rows="5"></textarea><br>
+<input class="cbp-mc-swar" name="c0985" value="অ" onclick='insert("85")' type="button">
+<input class="cbp-mc-swar" name="c0986" value="আ" onclick='insert("86")' type="button">
+<input class="cbp-mc-swar" name="c0987" value="ই" onclick='insert("87")' type="button">
+<input class="cbp-mc-swar" name="c0988" value="ঈ" onclick='insert("88")' type="button">
+<input class="cbp-mc-swar" name="c0989" value="উ" onclick='insert("89")' type="button">
+<input class="cbp-mc-swar" name="c098A" value="ঊ" onclick='insert("8A")' type="button">
+<input class="cbp-mc-swar" name="c098B" value="ঋ" onclick='insert("8B")' type="button">
+<input class="cbp-mc-swar" name="c09E0" value="ৠ" onclick='insert("E0")' type="button">
+<input class="cbp-mc-swar" name="c098F" value="এ" onclick='insert("8F")' type="button">
+<input class="cbp-mc-swar" name="c098F" value="ঐ" onclick='insert("90")' type="button">
+<input class="cbp-mc-swar" name="c0993" value="ও" onclick='insert("93")' type="button">
+<input class="cbp-mc-swar" name="c0994" value="ঔ" onclick='insert("94")' type="button">
+
+
+<input class="cbp-mc-submit" name="c0995" value="ক" onclick='insert("95")' type="button">
+<input class="cbp-mc-submit" name="c0996" value="খ" onclick='insert("96")' type="button">
+<input class="cbp-mc-submit" name="c0997" value="গ" onclick='insert("97")' type="button">
+<input class="cbp-mc-submit" name="c0998" value="ঘ" onclick='insert("98")' type="button">
+<input class="cbp-mc-submit" name="c0999" value="ঙ" onclick='insert("99")' type="button">
+<input class="cbp-mc-submit" name="c099A" value="চ" onclick='insert("9A")' type="button">
+<input class="cbp-mc-submit" name="c099B" value="ছ" onclick='insert("9B")' type="button">
+<input class="cbp-mc-submit" name="c099C" value="জ" onclick='insert("9C")' type="button">
+<input class="cbp-mc-submit" name="c099D" value="ঝ" onclick='insert("9D")' type="button">
+<input class="cbp-mc-submit" name="c099E" value="ঞ" onclick='insert("9E")' type="button">
+<input class="cbp-mc-submit" name="c099F" value="ট" onclick='insert("9F")' type="button">
+
+
+<input class="cbp-mc-number" name="c09E6" value="০" onclick='insert("E6")' type="button">
+<input class="cbp-mc-number" name="c09E7" value="১" onclick='insert("E7")' type="button">
+<input class="cbp-mc-number" name="c09E8" value="২" onclick='insert("E8")' type="button">
+
+<input class="cbp-mc-submit" name="c09A0" value="ঠ" onclick='insert("A0")' type="button">
+<input class="cbp-mc-submit" name="c09A1" value="ড" onclick='insert("A1")' type="button">
+<input class="cbp-mc-submit" name="c09A2" value="ঢ" onclick='insert("A2")' type="button">
+<input class="cbp-mc-submit" name="c09A3" value="ণ" onclick='insert("A3")' type="button">
+<input class="cbp-mc-submit" name="c09A4" value="ত" onclick='insert("A4")' type="button">
+<input class="cbp-mc-submit" name="c09A5" value="থ" onclick='insert("A5")' type="button">
+<input class="cbp-mc-submit" name="c09A6" value="দ" onclick='insert("A6")' type="button">
+<input class="cbp-mc-submit" name="c09A7" value="ধ" onclick='insert("A7")' type="button">
+<input class="cbp-mc-submit" name="c09A8" value="ন" onclick='insert("A8")' type="button">
+<input class="cbp-mc-submit" name="c09AA" value="প" onclick='insert("AA")' type="button">
+<input class="cbp-mc-submit" name="c09AB" value="ফ" onclick='insert("AB")' type="button">
+<input class="cbp-mc-submit" name="c09AC" value="ব" onclick='insert("AC")' type="button">
+<input class="cbp-mc-submit" name="c09AD" value="ভ" onclick='insert("AD")' type="button">
+<input class="cbp-mc-submit" name="c09AE" value="ম" onclick='insert("AE")' type="button">
+<input class="cbp-mc-submit" name="c09AF" value="য" onclick='insert("AF")' type="button">
+<input class="cbp-mc-submit" name="c09F0" value="ৰ" onclick='insert("F0")' type="button">
+<input class="cbp-mc-submit" name="c09B2" value="ল" onclick='insert("B2")' type="button">
+<input class="cbp-mc-submit" name="c09F1" value="ৱ" onclick='insert("F1")' type="button">
+<input class="cbp-mc-submit" name="c09B6" value="শ" onclick='insert("B6")' type="button">
+<input class="cbp-mc-submit" name="c09B7" value="ষ" onclick='insert("B7")' type="button">
+<input class="cbp-mc-submit" name="c09B8" value="স" onclick='insert("B8")' type="button">
+<input class="cbp-mc-submit" name="c09B9" value="হ" onclick='insert("B9")' type="button">
+<input class="cbp-mc-submit" name="c09DC" value="ড়" onclick='insert("DC")' type="button">
+
+
+<input class="cbp-mc-number" name="c09E9" value="৩" onclick='insert("E9")' type="button">
+<input class="cbp-mc-number" name="c09EA" value="৪" onclick='insert("EA")' type="button">
+<input class="cbp-mc-number" name="c09EB" value="৫" onclick='insert("EB")' type="button">
+
+<input class="cbp-mc-submit" name="c09DD" value="ঢ়" onclick='insert("DD")' type="button">
+<input class="cbp-mc-submit" name="c09DF" value="য়" onclick='insert("DF")' type="button">
+<input class="cbp-mc-kaar" name="c0981" value="ঁ" onclick='insert("81")' type="button">
+<input class="cbp-mc-kaar" name="c0982" value="ং" onclick='insert("82")' type="button">
+<input class="cbp-mc-kaar" name="c0983" value="ঃ" onclick='insert("83")' type="button">
+<input class="cbp-mc-kaar" name="c09BE" value="া" onclick='insert("BE")' type="button">
+<input class="cbp-mc-kaar" name="c09BF" value="ি" onclick='insert("BF")' type="button">
+<input class="cbp-mc-kaar" name="c09C0" value="ী" onclick='insert("C0")' type="button">
+<input class="cbp-mc-kaar" name="c09C1" value="ু" onclick='insert("C1")' type="button">
+<input class="cbp-mc-kaar" name="c09C2" value="ূ" onclick='insert("C2")' type="button">
+<input class="cbp-mc-kaar" name="c09C3" value="ৃ" onclick='insert("C3")' type="button">
+<input class="cbp-mc-kaar" name="c09C4" value="ৄ" onclick='insert("C4")' type="button">
+<input class="cbp-mc-kaar" name="c09C7" value="ে" onclick='insert("C7")' type="button">
+<input class="cbp-mc-kaar" name="c09C8" value="ৈ" onclick='insert("C8")' type="button">
+<input class="cbp-mc-kaar" value="ো" onclick='insertConj("ো")' type="button">
+<input class="cbp-mc-kaar" value="ৌ" onclick='insertConj("ৌ")' type="button">
+<input class="cbp-mc-kaar" value="্" onclick='insertConj("্")' type="button">
+<input class="cbp-mc-submit" value="ক্ত" onclick='insertConj("ক্ত")' type="button">
+<input class="cbp-mc-submit" value="ক্ক" onclick='insertConj("ক্ক")' type="button">
+<input class="cbp-mc-submit" value="গ্ধ" onclick='insertConj("গ্ধ")' type="button">
+<input class="cbp-mc-submit" value="দ্ধ" onclick='insertConj("দ্ধ")' type="button">
+<input class="cbp-mc-submit" value="গ্ৰ" onclick='insertConj("গ্ৰ")' type="button">
+<input class="cbp-mc-submit" value="ক্ৰ" onclick='insertConj("ক্ৰ")' type="button">
+
+<input class="cbp-mc-number" name="c09EC" value="৬" onclick='insert("EC")' type="button">
+<input class="cbp-mc-number" name="c09ED" value="৭" onclick='insert("ED")' type="button">
+<input class="cbp-mc-number" name="c09EE" value="৮" onclick='insert("EE")' type="button">
+
+<input class="cbp-mc-submit" value="ন্ন" onclick='insertConj("ন্ন")' type="button">
+<input class="cbp-mc-submit" value="ন্ত" onclick='insertConj("ন্ত")' type="button">
+<input class="cbp-mc-submit" value="ড্ড" onclick='insertConj("ড্ড")' type="button">
+<input class="cbp-mc-submit" value="চ্চ" onclick='insertConj("চ্চ")' type="button">
+<input class="cbp-mc-submit" value="ত্ৰ" onclick='insertConj("ত্ৰ")' type="button">
+<input class="cbp-mc-submit" value="ন্ম" onclick='insertConj("ন্ম")' type="button">
+<input class="cbp-mc-submit" value="স্ব" onclick='insertConj("স্ব")' type="button">
+<input class="cbp-mc-submit" value="ত্ত" onclick='insertConj("ত্ত")' type="button">
+<input class="cbp-mc-submit" value="ণ্ড" onclick='insertConj("ণ্ড")' type="button">
+<input class="cbp-mc-submit" value="শ্ব" onclick='insertConj("শ্ব")' type="button">
+<input class="cbp-mc-submit" value="ল্ল" onclick='insertConj("ল্ল")' type="button">
+<input class="cbp-mc-submit" value="ন্দ" onclick='insertConj("ন্দ")' type="button">
+<input class="cbp-mc-submit" value="জ্ঞ" onclick='insertConj("জ্ঞ")' type="button">
+<input class="cbp-mc-submit" value="হ্ন" onclick='insertConj("হ্ন")' type="button">
+<input class="cbp-mc-submit" value="ঞ্জ" onclick='insertConj("ঞ্জ")' type="button">
+<input class="cbp-mc-submit" value="প্ল" onclick='insertConj("প্ল")' type="button">
+<input class="cbp-mc-submit" value="ব্ব" onclick='insertConj("ব্ব")' type="button">
+<input class="cbp-mc-submit" value="ব্দ" onclick='insertConj("ব্দ")' type="button">
+<input class="cbp-mc-submit" value="ষ্ট" onclick='insertConj("ষ্ট")' type="button">
+<input class="cbp-mc-submit" value="স্ত" onclick='insertConj("স্ত")' type="button">
+<input class="cbp-mc-submit" value="ষ্প" onclick='insertConj("ষ্প")' type="button">
+<input class="cbp-mc-submit" value="প্ত" onclick='insertConj("প্ত")' type="button">
+<input class="cbp-mc-submit" value="স্ম" onclick='insertConj("স্ম")' type="button">
+
+<input class="cbp-mc-number" name="c09EF" value="৯" onclick='insert("EF")' type="button">
+
+<br><br>
+<input type="reset" name="CLEAR ALL" class="cbp-mc-reset">
+<input class="cbp-mc-space" name="0032*" value="SPACE" onclick='insertConj(" ")' type="button">
+<input class="cbp-mc-delete" name="0032*" value="BACKSPACE" onclick='onPressBackspace()' type="button">
+<br>
+</form>
+
+
+</div>
+<div class="footer black"><br>DISTRIBUTED UNDER <a href="LICENSE.txt">GNU</a> LICENCE. DEVELOPED BY <a href="http://www.afzalansari.in">AFZAL ANSARI</a>.</div>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/ace.min.js"></script>
+
+</body>
+
+</html>
